@@ -1,0 +1,19 @@
+#
+#  mensabot
+#
+#  Copyright (c) 2010, Daniel Gasienica <daniel@gasienica.ch>
+#  All rights reserved.
+#
+
+application: infsysmensabot
+version: live
+runtime: python
+api_version: 1
+
+handlers:
+- url: /_wave/.*
+  script: mensabot.py
+- url: /web/.*
+  script: mensabot.py
+- url: /assets
+  static_dir: assets
